@@ -3,7 +3,7 @@ Golang lightweight package/ implementation example of OAuth1.0 Authentication He
 
 To quickly import the package into your project:
 > ```
->  go get github.com/ku00015/go-oauth1
+>  go get github.com/klaidas/go-oauth1
 > ```
 
 &nbsp;
