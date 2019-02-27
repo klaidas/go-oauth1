@@ -1,10 +1,12 @@
 # Go-OAuth1.0
-Golang package/ implementation example of OAuth1.0 Authentication Header/ Signature calculation (Twitter etc..)
+Golang lightweight package/ implementation example of OAuth1.0 Authentication Header/ Signature calculation (Twitter etc..)
 
 To quickly import the package into your project:
 > ```
 >  go get github.com/ku00015/go-oauth1
 > ```
+
+&nbsp;
 
 Example usage: 
 ```Go
@@ -39,4 +41,17 @@ func main() {
 		fmt.Println(res.StatusCode)
 	}
 }
+```
+
+&nbsp;
+
+- Simply import the package
+- Create an OAuth1 Object with the information you have (In some cases, AccessSecret will be unknown, this is fine)
+- Call BuildOAuth1Header to generate your Authorization Header for the request you're making
+
+&nbsp;
+
+Output: 
+```
+OAuth oauth_consumer_key="xvz1evFS4wEEPTGEFPHBog",oauth_token="370773112-GmHxMAgYyLbNEtIKZeRNFsMKPR9EyMZeS9weJAEb",oauth_signature_method="HMAC-SHA1",oauth_timestamp="1318622958",oauth_nonce="kYjzVBB8Y0ZFabxSWbWovY3uYSQ2pTgmZeNu2VS4cg",oauth_version="1.0",oauth_signature="hCtSmYh%2BiHYCEqBWrE7C7hYmtUk%3D"
 ```
